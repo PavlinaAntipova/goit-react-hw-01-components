@@ -5,29 +5,34 @@ import s from './Profile.module.css';
 
 function Profile({ username, tag, location, avatar, stats }) {
   return (
-    <div>
-      <div>
-        <img src={avatar} alt="User avatar" />
-        <p>{username}</p>
-        <p>{`@${tag}`}</p>
-        <p>{location}</p>
-      </div>
+    <section>
+      <h2>1 - Профиль социальной сети</h2>
+      <div className={s.profile}>
+        <div className={s.infoBox}>
+          <img src={avatar} alt="User avatar" width="150" height="150" />
+          <div className={s.info}>
+            <p className={s.name}>{username}</p>
+            <p className={s.tag}>{`@${tag}`}</p>
+            <p className={s.place}>{location}</p>
+          </div>
+        </div>
 
-      <ul>
-        <li>
-          <span>Followers</span>
-          <span>{stats.followers}</span>
-        </li>
-        <li>
-          <span>Views</span>
-          <span>{stats.views}</span>
-        </li>
-        <li>
-          <span>Likes</span>
-          <span>{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+        <ul className={s.statList}>
+          <li className={s.statItem}>
+            <span>Followers</span>
+            <span className={s.statNumber}>{stats.followers}</span>
+          </li>
+          <li className={s.statItem}>
+            <span>Views</span>
+            <span className={s.statNumber}>{stats.views}</span>
+          </li>
+          <li className={s.statItem}>
+            <span>Likes</span>
+            <span className={s.statNumber}>{stats.likes}</span>
+          </li>
+        </ul>
+      </div>
+    </section>
   );
 }
 

@@ -1,0 +1,32 @@
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-size: 16px;
+  line-height: 19px;
+  color: #404d61;
+  width: 100%;
+}
+
+th,
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.head {
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #b1b1b1;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+tr:hover {
+  font-weight: 700;
+}

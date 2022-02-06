@@ -1,0 +1,60 @@
+.title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+  letter-spacing: 0.25px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.list {
+  display: flex;
+}
+
+.item {
+  margin-right: 30px;
+  padding: 16px;
+  background-color: #f7f9fa;
+  border-radius: 16px;
+}
+
+.item:last-child {
+  margin-right: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.percentage {
+  display: block;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.item:nth-child(1) .percentage {
+  color: #ea3d2f;
+}
+
+.item:nth-child(2) .percentage {
+  color: #367bf5;
+}
+
+.item:nth-child(3) .percentage {
+  color: #2fa84f;
+}
+
+.item:nth-child(4) .percentage {
+  color: #f3aa18;
+}
+
+.item:nth-child(5) .percentage {
+  color: #069697;
+}
