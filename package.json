@@ -2,12 +2,14 @@
   "name": "goit-react-hw-01-components",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pavlinaantipova.github.io/goit-react-hw-01-components",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.19",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "fullpage.js": "^3.1.2",
+    "gh-pages": "^3.2.3",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,6 +21,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "prepare": "husky install"
   },
   "eslintConfig": {
